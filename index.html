@@ -81,7 +81,93 @@
                     تطبیق روز، ظرفیت یا تایید همکاری در این صفحه انجام نمی‌شود.</p>
             </section>
         </div>
-
+        <!-- 4th part: form section-->
+        <section id="collaboration-request">
+            <form>
+                <div class="all-cards-common-style">
+                    <h4 class="blue-font-color">درخواست همکاری</h4>
+                    <!-- full name required par - form t-->
+                    <div>
+                        <label for="full-name"> نام و نام خانوادگی <span class="blue-font-color">(اجباری)</span></label>
+                        <br>
+                        <input class="text-field-style-form" type="text" name="full-name" id="full-name" required>
+                    </div>
+                    <!-- email required part - form -->
+                    <div>
+                        <label for="email-address"> ایمیل <span class="blue-font-color">(اجباری)</span></label> <br>
+                        <input class="text-field-style-form" type="email" name="email-address" id="email-address"
+                               required dir="ltr">
+                    </div>
+                    <!-- phone number required part - form -->
+                    <div>
+                        <label for="phone-number"> تلفن <span class="gray-font-color">(اجباری)</span></label> <br>
+                        <input class="text-field-style-form" type="tel" name="phone-number" id="phone-number" required>
+                    </div>
+                    <!-- radio fieldset - form -->
+                    <fieldset>
+                        <legend>بازه ترجیحی <span class="gray-font-color">(اجباری؛ دقیقا یک مورد)</span></legend>
+                        <div class="fieldset-radio-container">
+                            <div>
+                                <input type="radio" name="time-option" id="morning" required>
+                                <label for="morning">صبح</label> <br>
+                            </div>
+                            <div>
+                                <input type="radio" name="time-option" id="evening" required>
+                                <label for="evening">عصر</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- checkbox fieldset - form -->
+                    <fieldset>
+                        <legend>علاقه به فعالیت‌ها <span class="gray-font-color">(اختیاری؛ صفر تا سه مورد)</span>
+                        </legend>
+                        <div class="fieldset-radio-container">
+                            <div>
+                                <input type="checkbox" name="hobby-option" id="educate">
+                                <label for="educate">آموزش</label> <br>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="hobby-option" id="event">
+                                <label for="event">رویداد</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="hobby-option" id="library">
+                                <label for="library">کتابخانه</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- select part - form-->
+                    <div>
+                        <label for="experience-option">سطح تجربه <span class="blue-font-color">(اجباری)</span></label>
+                        <select class="text-field-style-form" name="experience" id="experience-option" required>
+                            <option value="">سطح تجربه را انتخاب کنید</option>
+                            <option value="new">تازه‌کار</option>
+                            <option value="some">محدود</option>
+                            <option value="experienced">باتجربه</option>
+                        </select>
+                    </div>
+                    <!-- text area part - form-->
+                    <div>
+                        <label for="description">توضیح <span class="gray-font-color">(اختیاری)</span></label>
+                        <textarea id="description" name="description" rows="7" class="text-area-style"></textarea>
+                        <p class="gray-font-color small-font">حداکثر ۳۰۰ نویسه (تایپ یا paste).</p>
+                    </div>
+                    <!-- checkbox part - form-->
+                    <div>
+                        <input type="checkbox" name="terms-agreement" id="terms-agreement" required>
+                        <label for="terms-agreement">قوانین همکاری را می پذیرم <span
+                                class="blue-font-color">(اجباری)</span></label>
+                    </div>
+                    <!--extra description - form-->
+                    <div class="description-form-container">
+                        <p>احترام به مراجعه کنندگان، حفظ اطلاعات شخصی آنان و هماهنگی با مسئول فعالیت پیش از حضور لازم
+                            است.</p>
+                    </div>
+                    <!-- submit button - form -->
+                    <button class="submit-button" type="submit">ارسال درخواست آزمایشی</button>
+                </div>
+            </form>
+        </section>
     </div>
 
 </main>
